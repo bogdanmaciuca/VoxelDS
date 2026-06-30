@@ -13,6 +13,9 @@ set(GLFW_BUILD_TESTS OFF CACHE INTERNAL "")
 set(GLFW_BUILD_EXAMPLES OFF CACHE INTERNAL "")
 add_subdirectory(thirdparty/glfw)
 
+# GLM
+add_subdirectory(thirdparty/glm)
+
 file(GLOB SRCS src/*.cpp)
 add_executable(${PROJECT_NAME} ${SRCS} ${SRCS})
 
